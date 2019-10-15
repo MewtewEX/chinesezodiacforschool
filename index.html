@@ -1,0 +1,134 @@
+<html>
+
+  <head>
+    <title>Chinese Zodiac</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+    <script>
+    var year = 0;
+    function getYear()
+    {
+      year = document.getElementById("input").value;
+      year = parseInt(year);
+    }
+    function getZodiac()
+    {
+      if(year % 12 == 0)
+      {
+        var monkey = "<img src = 'monkey.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = monkey;
+      }
+      else if(year % 12 == 1)
+      {
+        var rooster = "<img src = 'rooster.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = rooster;
+      }
+      else if(year % 12 == 2)
+      {
+        var dog = "<img src = 'dog.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = dog;
+      }
+      else if(year % 12 == 3)
+      {
+        var pig = "<img src = 'pig.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = pig;
+      }
+      else if(year % 12 == 4)
+      {
+        var rat = "<img src = 'rat.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = rat;
+      }
+      else if(year % 12 == 5)
+      {
+        var ox = "<img src = 'ox.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = ox;
+      }
+      else if(year % 12 == 6)
+      {
+        var tiger = "<img src = 'tiger.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = tiger;
+      }
+      else if(year % 12 == 7)
+      {
+        var rabbit = "<img src = 'rabbit.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = rabbit;
+      }
+      else if(year % 12 == 8)
+      {
+        var dragon = "<img src = 'dragon.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = dragon;
+      }
+      else if(year % 12 == 9)
+      {
+        var snake = "<img src = 'snake.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = snake;
+      }
+      else if(year % 12 == 10)
+      {
+        var horse = "<img src = 'horse.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = horse;
+      }
+      else if(year % 12 == 11)
+      {
+        var goat = "<img src = 'goat.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = goat;
+      }
+      else if(year % 12 == 12)
+      {
+        var pig = "<img src = 'pig.png.' height = '100px' width = '100px'>";
+        document.getElementById('sign').innerHTML = pig;
+      }
+    }
+
+    /**
+    var pig = "<img src = 'pig.png.' height = '100px' width = '100px'>";
+    document.getElementById('sign').innerHTML = pig;
+    var year = 1992;
+    if(year % 12 == 0)
+    {
+        alert("Monkey!")
+    }
+    **/
+
+    </script>
+
+    <style>
+    body {
+      background-image: url("chinese.jpg");
+    }
+    pre {
+  font-size: 23px;
+  color: darkred;
+}
+   #title {
+font-size: 50px;
+font-family: Kaushan Script;
+color: red;
+}
+  #smalltitle {
+font-size: 40px;
+font-family: Kaushan Script;
+color: darkred;
+}
+    </style>
+
+  </head>
+
+  <body>
+    <h1 id = "title"><center>Chinese Zodiac Checker</center></h1>
+    <br>
+    <pre><center>Wanna find out where you are on the chinese zodiac?
+Just enter your birth year below, and find out!
+It'll show what animal you are, and such.</center></pre>
+    <hr>
+    <center><input type = "text" value = "Type in Birth Year" id = "input">
+    <input type = "button" value = "Gather Info" onclick = "getYear()">
+    <br>
+    <input type = "button" value = "Gather Zodiac" onclick = "getZodiac()">
+    <h2 id = "smalltitle"> <center>Results</center></h2>
+    <span id ="sign"></span>
+
+  </body>
+
+</html>
